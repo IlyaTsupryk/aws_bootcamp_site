@@ -1,0 +1,32 @@
+[
+    {
+        "name": "cat1",
+        "path": "/images/nfts/cat1.png",
+        "description": "Cat1"
+    },
+    {
+        "name": "cat2",
+        "path": "/images/nfts/cat2.png",
+        "description": "Cat2"
+    },
+    {
+        "name": "cat3",
+        "path": "/images/nfts/cat3.png",
+        "description": "Cat3"
+    },
+    {
+        "name": "cat4",
+        "path": "/images/nfts/cat4.png",
+        "description": "Cat4"
+    },
+    {
+        "name": "cat5",
+        "path": "/images/nfts/cat5.png",
+        "description": "Cat5"
+    },
+    {
+        "name": "cat6",
+        "path": "/images/nfts/cat6.png",
+        "description": "Cat6"
+    }
+]
