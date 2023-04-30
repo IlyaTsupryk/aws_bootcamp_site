@@ -4,20 +4,19 @@ import { useRouter } from "next/router";
 
 
 type Props = {
-    key: string,
     imgName: string,
     imgPath: string,
     imgDescription: string
 }
 
 
-const Tile: React.FC<Props> = ({ key, imgName, imgPath, imgDescription }) => {
+const Tile: React.FC<Props> = ({ imgName, imgPath, imgDescription }) => {
     let router = useRouter()
 
     const redirectToDetails = async () => { router.push(`/nft/${imgName}`) }
 
     return (
-        <div className="col-6 col-md-4 bg-image hover-effect" key={key}>
+        <div className="col-6 col-md-4 bg-image hover-effect">
             <Image className="w-full h-auto"
                 src={imgPath}
                 alt={imgDescription}

@@ -1,5 +1,4 @@
 import useSWR from 'swr';
-import Header from './components/header';
 import Tile from './components/tile';
 
 
@@ -12,10 +11,16 @@ type Data = {
 
 export default function Home() {
   const { data, error } = useSWR('/api/all_images', fetcher);
-  let galery = <h1>"Loading..."</h1>
+  let galery = <h1>Loading...</h1>
   if (data) {
     galery = (
-      data.map((imgData: Data, i: string) => <Tile key={i} imgPath={imgData.path} imgName={imgData.name} imgDescription={imgData.description} />)
+      data.map((imgData: Data, i: string) =>
+        <Tile
+          key={i}
+          imgPath={imgData.path}
+          imgName={imgData.name}
+          imgDescription={imgData.description}
+        />)
     )
   }
 
