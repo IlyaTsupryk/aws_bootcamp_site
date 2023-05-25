@@ -1,3 +1,4 @@
+import Link from "next/link";
 import * as React from "react";
 
 
@@ -6,7 +7,7 @@ const Header: React.FC = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div className="container">
-                <a className="navbar-brand" href="/">My NFT Galery</a>
+                <Link className="navbar-brand" href="/">My NFT Galery</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -14,16 +15,16 @@ const Header: React.FC = () => {
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="/">Home</a>
+                            <Link className="nav-link" href="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">About</a>
+                            <Link className="nav-link" href="#">About</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Services</a>
+                            <Link className="nav-link" href="#">Services</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Contact</a>
+                            <Link className="nav-link" href="#">Contact</Link>
                         </li>
                     </ul>
                 </div>
